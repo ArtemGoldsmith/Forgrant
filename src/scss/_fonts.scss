@@ -1,0 +1,25 @@
+@mixin font-face($font-name, $file-name, $font-style, $font-weight) {
+  @font-face {
+    font-family: '#{$font-name}';
+    //src: url('../assets/fonts/#{$file-name}.otf');
+    src: local('#{$font-name}'),
+    //url('../assets/fonts/#{$file-name}.eot?#iefix') format('embedded-opentype'),
+    //url('../assets/fonts/#{$file-name}.woff') format('woff'),
+    url('../assets/fonts/#{$file-name}.ttf') format('truetype');
+    font-weight: $font-weight;
+    font-style: $font-style;
+  }
+}
+
+@include font-face('Roboto-Black', 'Roboto-Black', normal, 900);
+@include font-face('Roboto-Black', 'Roboto-BlackItalic', italic, 900);
+@include font-face('Roboto-Bold', 'Roboto-Bold', normal, 700);
+@include font-face('Roboto-Bold', 'Roboto-BoldItalic', italic, 700);
+@include font-face('Roboto', 'Roboto-Italic', italic, 400);
+@include font-face('Roboto-Light', 'Roboto-Light', normal, 200);
+@include font-face('Roboto-Light', 'Roboto-LightItalic', italic, 200);
+@include font-face('Roboto-Medium', 'Roboto-Medium', normal, 500);
+@include font-face('Roboto-Medium', 'Roboto-MediumItalic', italic, 500);
+@include font-face('Roboto', 'Roboto-Regular', normal, 400);
+@include font-face('Roboto-Thin', 'Roboto-Thin', normal, 100);
+@include font-face('Roboto-Thin', 'Roboto-ThinItalic', italic, 100);

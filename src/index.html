@@ -1,0 +1,144 @@
+<!-- Head -->
+<head>
+	<meta charset="UTF-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>Forgrant</title>
+	<meta name="description" content=""/>
+	<link rel="stylesheet" href="assets/plugins/base-sizing.css"/>
+	<link rel="stylesheet" href="css/main.css"/>
+
+	<!--[if lt IE 9]>
+	<script src="assets/plugins/html5shiv.min.js"></script>
+	<script src="assets/plugins/respond.min.js"></script>
+	<![endif]-->
+</head>
+<!-- /Head -->
+
+<div class="app">
+	<div class="wrapper pt-70">
+		<div class="currency-select mb-55 mb-xs-15">
+			<div class="currency-select__title pl-100 pl-sm-0">Select currency to exchange:</div>
+			<div class="custom-select">
+				<label for="currency"></label>
+				<select id="currency">
+					<option value="USD">USD</option>
+					<option value="EUR">EUR</option>
+					<option value="RUB">RUB</option>
+					<option value="GBP">GBP</option>
+				</select>
+			</div>
+		</div>
+		<div class="currency-blocks pb-150 pb-sm-50">
+			<div class="currency-blocks__block eth" data-shortcode="eth" style="background-image: url('../images/eth-bg.png')">
+				<div class="currency-blocks__block-title">Ethereum</div>
+				<div class="currency-blocks__block-image">
+					<img src="../images/eth-coin.png" alt="">
+				</div>
+				<div class="currency-blocks__block-price">
+					<div class="price-text">Price:</div>
+					<div class="price-value" id="mainPriceETH"></div>
+				</div>
+				<div class="currency-blocks__block-toggle">
+					<div class="toggle-text">Percent change</div>
+					<div class="toggle">
+						<input type="checkbox" class="checkbox" id="ETHPercentToggle">
+						<label for="ETHPercentToggle"></label>
+					</div>
+				</div>
+				<div class="currency-blocks__block-changes">
+					<div class="changes-line">
+						<div class="changes-text">Hour change</div>
+						<div class="changes-value increase" id="hourETH"></div>
+					</div>
+					<div class="changes-line">
+						<div class="changes-text">Day change</div>
+						<div class="changes-value increase" id="dayETH"></div>
+					</div>
+					<div class="changes-line">
+						<div class="changes-text">Week change</div>
+						<div class="changes-value increase" id="weekETH"></div>
+					</div>
+					<div class="changes-line">
+						<div class="changes-text">Month change</div>
+						<div class="changes-value increase" id="monthETH"></div>
+					</div>
+				</div>
+			</div>
+			<div class="currency-blocks__block ltc" data-shortcode="ltc" style="background-image: url('../images/ltc-bg.png')">
+					<div class="currency-blocks__block-title">Litecoin</div>
+					<div class="currency-blocks__block-image">
+						<img src="../images/ltc-coin.png" alt="">
+					</div>
+					<div class="currency-blocks__block-price">
+						<div class="price-text">Price:</div>
+						<div class="price-value" id="mainPriceLTC"></div>
+					</div>
+					<div class="currency-blocks__block-toggle">
+						<div class="toggle-text">Percent change</div>
+						<div class="toggle">
+							<input type="checkbox" class="checkbox" id="LTCPercentToggle">
+							<label for="LTCPercentToggle"></label>
+						</div>
+					</div>
+					<div class="currency-blocks__block-changes">
+						<div class="changes-line">
+							<div class="changes-text">Hour change</div>
+							<div class="changes-value increase" id="hourLTC"></div>
+						</div>
+						<div class="changes-line">
+							<div class="changes-text">Day change</div>
+							<div class="changes-value increase" id="dayLTC"></div>
+						</div>
+						<div class="changes-line">
+							<div class="changes-text">Week change</div>
+							<div class="changes-value increase" id="weekLTC"></div>
+						</div>
+						<div class="changes-line">
+							<div class="changes-text">Month change</div>
+							<div class="changes-value increase" id="monthLTC"></div>
+						</div>
+					</div>
+				</div>
+			<div class="currency-blocks__block btc" data-shortcode="btc" style="background-image: url('../images/btc-bg.png')">
+					<div class="currency-blocks__block-title">Bitcoin</div>
+					<div class="currency-blocks__block-image">
+						<img src="../images/btc-coin.png" alt="">
+					</div>
+					<div class="currency-blocks__block-price">
+						<div class="price-text">Price:</div>
+						<div class="price-value" id="mainPriceBTC"></div>
+					</div>
+					<div class="currency-blocks__block-toggle">
+						<div class="toggle-text">Percent change</div>
+						<div class="toggle">
+							<input type="checkbox" class="checkbox" id="BTCPercentToggle">
+							<label for="BTCPercentToggle"></label>
+						</div>
+					</div>
+					<div class="currency-blocks__block-changes">
+						<div class="changes-line">
+							<div class="changes-text">Hour change</div>
+							<div class="changes-value increase" id="hourBTC"></div>
+						</div>
+						<div class="changes-line">
+							<div class="changes-text">Day change</div>
+							<div class="changes-value increase" id="dayBTC"></div>
+						</div>
+						<div class="changes-line">
+							<div class="changes-text">Week change</div>
+							<div class="changes-value increase" id="weekBTC"></div>
+						</div>
+						<div class="changes-line">
+							<div class="changes-text">Month change</div>
+							<div class="changes-value increase" id="monthBTC"></div>
+						</div>
+					</div>
+				</div>
+		</div>
+	</div>
+</div>
+
+<!-- Scripts -->
+<script src="js/main.js"></script>
+<!-- /Scripts -->
